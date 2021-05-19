@@ -63,7 +63,12 @@
 
                     <div class="form-group">
                         <label>Kategori</label>
-                        <input type="text" name="kategori" class="form-control">
+                        <select class="form-control" name="kategori">
+                            <option>Elektronik</option>
+                            <option>Buku dan Alat tulis</option>
+                            <option>Pakaian</option>
+                            <option>Peralatan Olahraga</option>
+                        </select>
                     </div>
 
                     <div class="form-group">
