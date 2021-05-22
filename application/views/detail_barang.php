@@ -40,7 +40,7 @@
 
                             </table>
                             <?php echo anchor('dashboard/tambah_keranjang/' . $brg->id_barang, '<div class="btn btn-sm btn-primary">Tambah Ke Keranjang</div>') ?>
-                            <?php echo anchor('dashboard/index/', '<div class="btn btn-sm btn-danger">Kembali ke beranda</div>') ?>
+                            <?php echo anchor('welcome/index/', '<div class="btn btn-sm btn-danger">Kembali ke beranda</div>') ?>
                         </div>
 
                     <?php endforeach; ?>
