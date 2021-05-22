@@ -44,7 +44,7 @@
                                     </form>
                                     <hr>
 
-                                    <a class="small" href="register.html">Belum punya akun? Daftar!</a>
+                                    <a class="small" href="<?php echo base_url('registrasi/index') ?>">Belum punya akun? Daftar!</a>
                                 </div>
                             </div>
                         </div>
