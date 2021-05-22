@@ -29,12 +29,18 @@ class Auth extends CI_Controller
                         redirect('admin/dashboard_admin');
                         break;
                     case 2:
-                        redirect('dashboard');
+                        redirect('welcome');
                         break;
                     default:
                         break;
                 }
             }
         }
+    }
+
+    public function logout()
+    {
+        $this->session->sess_destroy();
+        redirect('auth/login');
     }
 }
