@@ -127,7 +127,7 @@
                         <div class="navbar">
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
-                                    <?php $keranjang = 'keranjang :' . $this->cart->total_items() . 'items' ?>
+                                    <?php $keranjang = '<i class="fas fa-shopping-bag mr-2"></i>' . $this->cart->total_items() . 'items' ?>
                                     <?php echo anchor('dashboard/detail_keranjang', $keranjang) ?>
                                 </li>
                             </ul>

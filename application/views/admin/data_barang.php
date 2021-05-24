@@ -67,7 +67,7 @@
                             <option>Elektronik</option>
                             <option>Buku</option>
                             <option>Pakaian</option>
-                            <option>Peralatan Olahraga</option>
+                            <option>Olahraga</option>
                         </select>
                     </div>
 
