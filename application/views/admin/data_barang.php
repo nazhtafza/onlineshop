@@ -65,7 +65,7 @@
                         <label>Kategori</label>
                         <select class="form-control" name="kategori">
                             <option>Elektronik</option>
-                            <option>Buku dan Alat tulis</option>
+                            <option>Buku</option>
                             <option>Pakaian</option>
                             <option>Peralatan Olahraga</option>
                         </select>
