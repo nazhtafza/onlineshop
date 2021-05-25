@@ -73,4 +73,24 @@ class Dashboard extends CI_Controller
         $this->load->view('detail_barang', $data);
         $this->load->view('templates/footer');
     }
+    //     public function hapus_barang($rowid)
+    //     {
+    //         $data = array(
+    //             'rowid' => $rowid,
+    //             'qty'   => 0
+    //         );
+
+    //         $this->cart->update($data);
+    //         redirect('dashboard/detail_keranjang');
+    //     }
+
+    public function hapus_barang($data)
+    {
+        $rowid = $data;
+        $qty = 0;
+        $array = array('rowid' => $rowid, 'qty' => $qty);
+        $this->cart->update($array);
+        print_r($this->cart->contents());
+        redirect('dashboard/detail_keranjang');
+    }
 }

@@ -46,4 +46,15 @@ class Model_barang extends CI_Model
             return false;
         }
     }
+    public function hapus_barang($where, $table)
+    {
+        $this->db->where($where);
+        $this->db->delete($table);
+    }
+    // function deleterecords($id)
+    // {
+    //     $this->db->where("id_barang", $id);
+    //     $this->db->delete("tb_barang");
+    //     return true;
+    // }
 }

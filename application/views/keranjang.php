@@ -1,12 +1,13 @@
 <div class="container-fluid">
     <h4>Keranjang Belanja</h4>
     <table class="table table-bordered table-striped table-hover">
-        <tr>
+        <tr class="text-center">
             <th>NO</th>
             <th>Nama Produk</th>
             <th>Jumlah</th>
             <th>Harga</th>
             <th>Subtotal</th>
+            <th colspan="1">Aksi</th>
         </tr>
 
         <?php
@@ -19,11 +20,13 @@
                 <td><?php echo $items['qty'] ?></td>
                 <td align="right">Rp<?php echo number_format($items['price'], 0, ',', '.') ?></td>
                 <td align="right">Rp<?php echo number_format($items['subtotal'], 0, ',', '.') ?></td>
+                <td class="text-center">
+                    <?php echo anchor('dashboard/hapus_barang/' . $items['rowid'], '<div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div>') ?>
+                </td>
             </tr>
         <?php endforeach; ?>
-
         <tr>
-            <td colspan="4"></td>
+            <td colspan="5"></td>
             <td align="right">Rp<?php echo number_format($this->cart->total(), 0, ',', '.') ?></td>
         </tr>
     </table>
