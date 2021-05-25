@@ -4,7 +4,7 @@
         <tr class="text-center">
             <th>NO</th>
             <th>Nama Produk</th>
-            <th>Jumlah</th>
+            <th width="85px">Jumlah</th>
             <th>Harga</th>
             <th>Subtotal</th>
             <th colspan="1">Aksi</th>
@@ -18,6 +18,7 @@
                 <td><?php echo $no++ ?></td>
                 <td><?php echo $items['name'] ?></td>
                 <td><?php echo $items['qty'] ?></td>
+
                 <td align="right">Rp<?php echo number_format($items['price'], 0, ',', '.') ?></td>
                 <td align="right">Rp<?php echo number_format($items['subtotal'], 0, ',', '.') ?></td>
                 <td class="text-center">

@@ -93,4 +93,18 @@ class Dashboard extends CI_Controller
         print_r($this->cart->contents());
         redirect('dashboard/detail_keranjang');
     }
+    // public function perbarui()
+    // {
+    //     $no = 1;
+    //     foreach ($this->cart->contents() as $items) {
+    //         $data = array(
+    //             'rowid' => $items['rowid'],
+    //             'qty'   => $this->input->post($no . '[qty]'),
+    //         );
+
+    //         $this->cart->update($data);
+    //         $no++;
+    //     }
+    //     redirect('dashboard/detail_keranjang');
+    // }
 }
